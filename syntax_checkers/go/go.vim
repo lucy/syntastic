@@ -28,7 +28,7 @@ endfunction
 
 function! SyntaxCheckers_go_go_GetLocList() dict
     if !exists('s:go_new')
-        let s:go_new = syntastic#util#versionIsAtLeast(self.getVersion(self.getExecEscaped() . ' version'), [1, 5])
+        let s:go_new = 1
     endif
     let buf = bufnr('')
 
